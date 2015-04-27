@@ -1,15 +1,8 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "ML_GVIDMW.h"
-#include <iostream>
 #include <string.h>
 #include <unistd.h>
-
-using namespace std;
-
-
-
 
 int main()
 {
@@ -19,21 +12,21 @@ int main()
         if(ret < 0) 
 	{
 		printf("error in ML_GVID_Init!\n");
-		exit(-1);
+		return 1;
 	}
 
- 	ret =ML_GVID_OpenPPI(0,0, 0 , 1024, 1024);
+ 	ret = ML_GVID_OpenPPI(0, 0, 0 , 1024, 1024);
         if(ret < 0) 
 	{
 		printf("error in ML_GVID_OpenPPI!\n");
-		exit(-1);
+		return 1;
 	}
 	
 	ret = ML_GVID_OpenAr(0,1024,300,200,200);
         if(ret < 0) 
 	{
 		printf("error in ML_GVID_OpenAr!\n");
-		exit(-1);
+		return 1;
 	}
 
 // Status ML_GVID_SetPPIXY(char VideoChannel ,short theX ,short theY);
@@ -56,14 +49,14 @@ int main()
 //        if(ret < 0) 
 //	{
 //		printf("error in ML_GVID_OpenPPI!\n");
-//		exit(-1);
+//		return 1;
 //	}
 //	
 //	ret = ML_GVID_OpenAr(1,1600+1024,300,200,200);
 //        if(ret < 0) 
 //	{
 //		printf("error in ML_GVID_OpenAr!\n");
-//		exit(-1);
+//		return 1;
 //	}
 
 
@@ -82,21 +75,21 @@ int main()
         if(ret < 0) 
 	{
 		printf("error in ML_GVID_SetPPIXY!\n");
-		exit(-1);
+		return 1;
 	}
 
 //	ret = ML_GVID_SetPPIWH(0,500,500);
 //        if(ret < 0) 
 //	{
 //		printf("error in ML_GVID_SetPPIWH!\n");
-//		exit(-1);
+//		return 1;
 //	}
 
 //	ret = ML_GVID_ClosePPI(0);
 //        if(ret < 0) 
 //	{
 //		printf("error in ML_GVID_ClosePPI!\n");
-//		exit(-1);
+//		return 1;
 //	}
 
     while(fgets(s,50,stdin)!=NULL)
