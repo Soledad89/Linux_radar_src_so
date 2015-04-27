@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  //exit函数
-#include   <unistd.h>  //usleep
+#include <unistd.h>  //usleep
 #include "ML_GVIDMW_sys.h"
 #include "ML_GVIDMW.h"
 #include "Timer.h"
@@ -141,9 +141,9 @@ EXPORT Status ML_GVID_Init()
 //        a2.start();
         SetTimer(40000,tshTestYh);
 
-        ret =  OpenTVDLL("./libML_GVIDTV.so");
-        ret = InitTVFunctionPointer();
-        ret = InitTV();
+       // ret =  OpenTVDLL("./libML_GVIDTV.so");
+       // ret = InitTVFunctionPointer();
+       // ret = InitTV();
 
         bInit=true;
 

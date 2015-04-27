@@ -46,7 +46,18 @@ typedef int Status;
  Status ML_GVID_SetMiniWinColor(char VideoChannel,unsigned int theColor);
  Status ML_GVID_SetMiniWinDistDir(char VideoChannel ,short theDistance ,float theDirection);
  Status ML_GVID_SetMiniWinScale(char VideoChannel,int theScale);
-//------------------------------------------------------------------------------
+
+ //------TV------
+Status ML_GVID_OpenTV (char VideoChannel ,short theX, short theY,short theWidth,short theHeight);//29
+Status ML_GVID_CloseTV (char VideoChannel );//30
+Status ML_GVID_SetTVXY(char VideoChannel ,short theX, short theY);//31
+Status ML_GVID_SetTVWH(char VideoChannel ,short theWidth, short theHeight);//32
+Status ML_GVID_FrostTV(char VideoChannel,char theFrost);//34
+Status ML_GVID_SetTVBright(char VideoChannel,unsigned char theBright);
+Status ML_GVID_SetTVContrast(char VideoChannel,unsigned char theContrast);
+Status ML_GVID_SetTVColor(char VideoChannel,unsigned char theColor);
+
+ //------------------------------------------------------------------------------
 typedef struct  interface_pkg
 {
 	unsigned short	 pkgNum;
@@ -55,7 +66,8 @@ typedef struct  interface_pkg
 }interface_pkg;
 
  Status tshInputRadarPkg(char VideoChannel,interface_pkg *dat);
-
+
+
 
 // d should be 1200 length
  Status tshARUpdate(char VideoChannel,unsigned char *d);

@@ -4,6 +4,8 @@
 #include "ML_GVIDMW.h"
 #include <iostream>
 #include <string.h>
+#include <unistd.h>
+
 using namespace std;
 
 
@@ -65,7 +67,7 @@ int main()
 //	}
 
 
-char s[50];
+    char s[50];
 
     while(fgets(s,50,stdin)!=NULL)
     {
@@ -75,7 +77,7 @@ char s[50];
         }
     }
 
-       usleep(800000);
+       usleep(8000);
 	ret = ML_GVID_SetPPIXY(0,500,500);
         if(ret < 0) 
 	{

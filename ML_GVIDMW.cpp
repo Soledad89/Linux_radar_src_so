@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  //exit函数
-#include   <unistd.h>  //usleep
+#include <unistd.h>  //usleep
 #include "ML_GVIDMW.h"
 #include "Timer.h"
 //#include "./Timer/include/timer_manager.h"
@@ -98,7 +98,7 @@ void tshTestYh(int a)
 	SetTimer(30000,tshTestYh);
 	return ret;
 }
-//----------------------------------PPI---------------------------------------- Status ML_GVID_OpenPPI(char VideoChannel,short theX, short theY , short theWidth, short theHeight)
+//----------------------------------PPI---------------------------------------- Status ML_GVID_OpenPPI(char VideoChannel,short theX, short theY , short theWidth, short theHeight)
 {
 	printf("ML_GVID_OpenPPI------\n");
 	int ret=0;

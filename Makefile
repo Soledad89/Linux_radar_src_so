@@ -14,7 +14,7 @@ Compile_Flag = Release
 Output:= bin
 
 #set your source folder
-SRC:= SRC
+src:= src
 
 #add the lib you used here
 #LIBS := -lLib1 -lLib2 -lLib3
@@ -31,7 +31,7 @@ INCLUDEPATH := -I/usr/include
 FinalOutput := $(Output)/$(Compile_Flag)/
 
 #list all dirs
-SUBDIRS := $(shell find $(SRC) -type d)
+SUBDIRS := $(shell find $(src) -type d)
 #flags in makefile
 DEBUG_FLAG = -O0 -g3 -Wall -c -fmessage-length=0 #-fvisibility=hidden
 RELEASE_FLAG = -O3 -Wall -c -fmessage-length=0 #-fvisibility=hidden
@@ -46,10 +46,10 @@ endif
 
 #prepare files
 
-CPP_SOURCES = $(wildcard $(SRC)/*.cpp)
-CPP_SOURCES +=$(wildcard $(SRC)/FrameBuffer/*.cpp) 
-CPP_SOURCES +=$(wildcard $(SRC)/RadarDisplay/*.cpp) 
-CPP_SOURCES +=$(wildcard $(SRC)/Timer/src/*.cpp) 
+CPP_SOURCES = $(wildcard $(src)/*.cpp)
+CPP_SOURCES +=$(wildcard $(src)/FrameBuffer/*.cpp) 
+CPP_SOURCES +=$(wildcard $(src)/RadarDisplay/*.cpp) 
+CPP_SOURCES +=$(wildcard $(src)/Timer/src/*.cpp) 
 
 OBJS:=$(CPP_SOURCES:%.cpp=$(FinalOutput)%.o)
 
