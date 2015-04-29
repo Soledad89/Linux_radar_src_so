@@ -69,8 +69,8 @@ int main()
             break;
         }
     }
-
-       usleep(8000);
+    
+    usleep(8000);
 	ret = ML_GVID_SetPPIXY(0,500,500);
         if(ret < 0) 
 	{
@@ -92,16 +92,6 @@ int main()
 //		return 1;
 //	}
 
-    while(fgets(s,50,stdin)!=NULL)
-    {
-        if(strstr(s,"bye"))
-        {
-            break;
-        }
-    }
-
 	ML_GVID_Exit();
-
-	//usleep(80000);
 	return 0;
 }

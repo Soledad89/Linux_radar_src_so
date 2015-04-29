@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "DataBuffer.h"
-#include   <unistd.h>  //usleep
+#include  <unistd.h>  //usleep
 
 
 int CDataBuffer::BufferNum = 0;

@@ -35,9 +35,9 @@ class CRadarDisplay
 		CAR *ar;
 		CMark *mark;
 	private:
-	fb_surface* PPI_Surface;
-	fb_surface* AR_Surface;
-	fb_surface* MINI_WIN_Surface;
+    	fb_surface* PPI_Surface;
+    	fb_surface* AR_Surface;
+    	fb_surface* MINI_WIN_Surface;
         RECT  RadarDisplayRect[3];//TypePPI=0,TypeAR,TypeWIN
 	int arStep;
 	public:

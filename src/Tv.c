@@ -16,6 +16,7 @@ int  OpenTVDLL(char *filename)
     }  
  return 1;
 }
+
 void CloseTVDLL()
 {
 
@@ -30,55 +31,64 @@ int InitTVFunctionPointer()
 {
     int i=0;
     char *error;
+   
     InitTV = dlsym(tv_lib_handle, "ML_GVID_InitTV");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return --i;
     }
-   OpenTV = dlsym(tv_lib_handle, "ML_GVID_OpenTV");
+   
+    OpenTV = dlsym(tv_lib_handle, "ML_GVID_OpenTV");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return i;
     }   
-   CloseTV = dlsym(tv_lib_handle, "ML_GVID_CloseTV");
+  
+    CloseTV = dlsym(tv_lib_handle, "ML_GVID_CloseTV");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return  --i;
     }
-   SetTVXY = dlsym(tv_lib_handle, "ML_GVID_SetTVXY");
+   
+    SetTVXY = dlsym(tv_lib_handle, "ML_GVID_SetTVXY");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return  --i;
     }
-   SetTVWH = dlsym(tv_lib_handle, "ML_GVID_SetTVWH");
+   
+    SetTVWH = dlsym(tv_lib_handle, "ML_GVID_SetTVWH");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return --i;
     }
-   SetTVFrost = dlsym(tv_lib_handle, "ML_GVID_SetTVFrost");
+   
+    SetTVFrost = dlsym(tv_lib_handle, "ML_GVID_SetTVFrost");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return --i;
     }
-   SetTVBright = dlsym(tv_lib_handle, "ML_GVID_SetTVBright");
+  
+    SetTVBright = dlsym(tv_lib_handle, "ML_GVID_SetTVBright");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return --i;
     }
-   SetTVContrast = dlsym(tv_lib_handle, "ML_GVID_SetTVContrast");
+   
+    SetTVContrast = dlsym(tv_lib_handle, "ML_GVID_SetTVContrast");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);
        return --i;
     }
-   SetTVColor = dlsym(tv_lib_handle, "ML_GVID_SetTVColor");
+   
+    SetTVColor = dlsym(tv_lib_handle, "ML_GVID_SetTVColor");
     if ((error = dlerror()) != NULL)
     {
        fprintf(stderr, "%s\n", error);

@@ -1,1286 +1,4 @@
-cscope 15 $HOME/scripts/linux_radar_src_so -q 0000003660 0000362468
-	@ML_GVIDMW.cpp
-
-1 
-	~<¡dio.h
->
-
-2 
-	~<¡dlib.h
->
-
-3 
-	~<uni¡d.h
->
-
-4 
-	~"ML_GVIDMW.h
-"
-
-5 
-	~"Tim”.h
-"
-
-7 
-	~"Rad¬Di¥Ïy/Rad¬Dis.h
-"
-
-8 
-	~"D©aBufãr.h
-"
-
-10 
-FILE
- * 
-	gdebugå
- =
-NULL
-;
-
-12 
-CRad¬Di¥Ïy
-* 
-	g¿d¬1
- =
-NULL
-;
-
-13 
-CD©aBufãr
-* 
-	gpBufãr1
- = 
-NULL
-;
-
-14 
-CRad¬Di¥Ïy
-* 
-	g¿d¬2
- =
-NULL
-;
-
-15 
-CD©aBufãr
-* 
-	gpBufãr2
- = 
-NULL
-;
-
-35 
-	$tshTe¡Yh
-(
-a
-)
-
-37 
-i
- =0;i<2;i++)
-
-40 if(
-¿d¬1
-ìad¬1->
-yh
-->
-	`yh
-();
-
-43 
-	}
-}
-
-45 
-Stus
- 
-	$ML_GVID_In™
-()
-
-47 
-»t
- = 1;
-
-49 ifÐ(
-debugå
-=
-	`fÝ’
-("./§ve/dÎdebug.txt","w"))==
-NULL
- ){
-
-50 
-	`´štf
-("Erroe in createhe debug file!\n"); -1;
-
-52 
-	`fb_š™
-();
-
-54 
-	`´štf
-("starto init„adar1\n");
-
-55 
-¿d¬1
- =
-Ãw
- 
-	`CRad¬Di¥Ïy
-();
-
-56 if(!
-¿d¬1
-){
-
-57 
-	`´štf
-("radar1‚ew mem failure!\n"); -2;}
-
-58 
-	`årštf
-(
-debugå
-,"---------radar1 class created! -----\n");
-
-60 
-»t
- = 
-¿d¬1
-->
-	`LßdM­ToPPI
-("./bmp_ppm/map.ppm");
-
-61 if(
-»t
- < 0è{
-	`´štf
-("LoadMapToPPI failure!\n");„et;}
-
-62 
-pBufãr1
- = 
-Ãw
- 
-	`CD©aBufãr
-();
-
-63 if(!
-pBufãr1
-->
-	`š™FžeD©aBufãr
-("./save/radar1"))
-
-65 
-	`´štf
-("initFileDataBuffer failure!\n");
-
-68 
-»t
- = 
-pBufãr1
-->
-	`In™
-(
-¿d¬1
-);
-
-69 if(
-»t
- < 0){
-
-70 
-	`´štf
-("pBufãr1 In™ fažu»!\n"); 
-»t
-;}
-
-73 
-	`´štf
-("starto init„adar2\n");
-
-74 
-¿d¬2
- =
-Ãw
- 
-	`CRad¬Di¥Ïy
-();
-
-75 if(!
-¿d¬2
-){
-
-76 
-	`´štf
-("radar2‚ew mem failure!\n"); -2;}
-
-77 
-	`årštf
-(
-debugå
-,"---------radar2 class created! -----\n");
-
-79 
-»t
- = 
-¿d¬2
-->
-	`LßdM­ToPPI
-("./bmp_ppm/map.ppm");
-
-80 if(
-»t
- < 0è{
-	`´štf
-("LoadMapToPPI failure!\n");„et;}
-
-81 
-pBufãr2
- = 
-Ãw
- 
-	`CD©aBufãr
-();
-
-82 if(!
-pBufãr2
-->
-	`š™FžeD©aBufãr
-("./save/radar2"))
-
-84 
-	`´štf
-("initFileDataBuffer failure!\n");
-
-87 
-»t
- = 
-pBufãr2
-->
-	`In™
-(
-¿d¬2
-);
-
-88 if(
-»t
- < 0){
-
-89 
-	`´štf
-("pBufãr2 In™ fažu»!\n"); 
-»t
-;}
-
-91 
-	`´štf
-("starto init yh\n");
-
-98 
-	`S‘Tim”
-(30000,
-tshTe¡Yh
-);
-
-99  
-»t
-;
-
-100 
-	}
-}
-
-103 
-´štf
-("ML_GVID_OpenPPI------\n");
-
-104 
-	g»t
-=0;
-
-105 
-	gVideoChªÃl
-)
-
-108 
-»t
- = 
-¿d¬1
-->
-ML_GVID_O³nPPI
-(
-theX
-,
-theY
-,
-theWidth
-,
-theHeight
-);
-
-111 
-»t
- = 
-¿d¬2
-->
-ML_GVID_O³nPPI
-(
-theX
-,
-theY
-,
-theWidth
-,
-theHeight
-);
-
-114 
-»t
- = -5;
-
-117  
-	g»t
-;
-
-119 
-Stus
- 
-	$ML_GVID_Clo£PPI
-(
-VideoChªÃl
-)
-
-121 
-	`´štf
-("ML_GVID_ClosePPI------\n");
-
-122 
-»t
-=0;
-
-123 
-VideoChªÃl
-)
-
-126 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_Clo£PPI
-();
-
-129 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_Clo£PPI
-();
-
-132 
-»t
- = -5;
-
-135  
-»t
-;
-
-137 
-	}
-}
-
-138 
-Stus
- 
-	$ML_GVID_S‘PPIXY
-(
-VideoChªÃl
- ,
-theX
- ,
-theY
-)
-
-140 
-	`´štf
-("ML_GVID_SetPPIXY------\n");
-
-141 
-»t
-=0;
-
-142 
-VideoChªÃl
-)
-
-145 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIXY
-(
-theX
-,
-theY
-);
-
-148 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIXY
-(
-theX
-,
-theY
-);
-
-151 
-»t
- = -5;
-
-154  
-»t
-;
-
-155 
-	}
-}
-
-156 
-Stus
- 
-	$ML_GVID_S‘PPIWH
-(
-VideoChªÃl
- ,
-theWidth
-, 
-theHeight
-){
-
-157 
-	`´štf
-("ML_GVID_SetPPIWH------\n");
-
-158 
-»t
-=0;
-
-159 
-VideoChªÃl
-)
-
-162 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIWH
-(
-theWidth
-,
-theHeight
-);
-
-165 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIWH
-(
-theWidth
-,
-theHeight
-);
-
-168 
-»t
- = -5;
-
-171  
-»t
-;
-
-172 
-	}
-}
-
-173 
-Stus
- 
-	$ML_GVID_S‘PPIMode
-(
-VideoChªÃl
-, 
-theMode
-){
-
-174 
-	`´štf
-("ML_GVID_SetPPIMode------\n");
-
-175 
-»t
-=0;
-
-176 
-VideoChªÃl
-)
-
-179 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIMode
-(
-theMode
-);
-
-182 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIMode
-(
-theMode
-);
-
-185 
-»t
- = -5;
-
-188  
-»t
-;
-
-189 
-	}
-}
-
-190 
-Stus
- 
-	$ML_GVID_S‘PPIC’‹r
-(
-VideoChªÃl
- ,
-theX
- ,
-theY
-){
-
-191 
-	`´štf
-("ML_GVID_SetPPICenter------\n");
-
-192 
-»t
-=0;
-
-193 
-VideoChªÃl
-)
-
-196 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIC’‹r
-(
-theX
-,
-theY
-);
-
-199 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIC’‹r
-(
-theX
-,
-theY
-);
-
-202 
-»t
- = -5;
-
-205  
-»t
-;
-
-206 
-	}
-}
-
-207 
-Stus
- 
-	$ML_GVID_S‘PPIShDœ
-(
-VideoChªÃl
-,
-theShDœ
-){
-
-208 
-	`´štf
-("ML_GVID_SetPPIShipDir------\n");
-
-209 
-»t
-=0;
-
-210 
-VideoChªÃl
-)
-
-213 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIShDœ
-(
-theShDœ
-);
-
-216 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIShDœ
-(
-theShDœ
-);
-
-219 
-»t
- = -5;
-
-222  
-»t
-;
-
-223 
-	}
-}
-
-224 
-Stus
- 
-	$ML_GVID_S‘PPICÞÜ
-(
-VideoChªÃl
-,
-theCÞÜ
-){
-
-225 
-	`´štf
-("ML_GVID_SetPPIColor------\n");
-
-226 
-»t
-=0;
-
-227 
-VideoChªÃl
-)
-
-230 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPICÞÜ
-(
-theCÞÜ
-);
-
-233 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPICÞÜ
-(
-theCÞÜ
-);
-
-236 
-»t
- = -5;
-
-239  
-»t
-;
-
-240 
-	}
-}
-
-241 
-Stus
- 
-	$ML_GVID_S‘PPISÿn
-(
-VideoChªÃl
-,
-theSÿn
-){
-
-242 
-	`´štf
-("ML_GVID_SetPPIScan------\n");
-
-243 
-»t
-=0;
-
-244 
-VideoChªÃl
-)
-
-247 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPISÿn
-(
-theSÿn
-);
-
-250 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPISÿn
-(
-theSÿn
-);
-
-253 
-»t
- = -5;
-
-256  
-»t
-;
-
-257 
-	}
-}
-
-258 
-Stus
- 
-	$ML_GVID_S‘PPILšeCÞÜ
-(
-VideoChªÃl
-,
-theCÞÜ
-){
-
-259 
-	`´štf
-("ML_GVID_SetPPILineColor------\n");
-
-260 
-»t
-=0;
-
-261 
-VideoChªÃl
-)
-
-264 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPILšeCÞÜ
-(
-theCÞÜ
-);
-
-267 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPILšeCÞÜ
-(
-theCÞÜ
-);
-
-270 
-»t
- = -5;
-
-273  
-»t
-;
-
-274 
-	}
-}
-
-275 
-Stus
- 
-	$ML_GVID_Fro¡PPI
-(
-VideoChªÃl
-,
-theFro¡
-){
-
-276 
-	`´štf
-("ML_GVID_FrostPPI------\n");
-
-277 
-»t
-=0;
-
-278 
-VideoChªÃl
-)
-
-281 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_Fro¡PPI
-(
-theFro¡
-);
-
-284 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_Fro¡PPI
-(
-theFro¡
-);
-
-287 
-»t
- = -5;
-
-290  
-»t
-;
-
-291 
-	}
-}
-
-292 
-Stus
- 
-	$ML_GVID_S‘PPIDi¡
-(
-VideoChªÃl
-,
-theDi¡
-){
-
-293 
-	`´štf
-("ML_GVID_SetPPIDist------\n");
-
-294 
-»t
-=0;
-
-295 
-VideoChªÃl
-)
-
-298 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIDi¡
-(
-theDi¡
-);
-
-301 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIDi¡
-(
-theDi¡
-);
-
-304 
-»t
- = -5;
-
-307  
-»t
-;
-
-308 
-	}
-}
-
-309 
-Stus
- 
-	$ML_GVID_S‘PPISw™ch
-(
-VideoChªÃl
-,
-theSw™ch
-){
-
-310 
-	`´štf
-("ML_GVID_SetPPISwitch------\n");
-
-311 
-»t
-=0;
-
-312 
-VideoChªÃl
-)
-
-315 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPISw™ch
-(
-theSw™ch
-);
-
-318 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPISw™ch
-(
-theSw™ch
-);
-
-321 
-»t
- = -5;
-
-324  
-»t
-;
-
-325 
-	}
-}
-
-326 
-Stus
- 
-	$ML_GVID_S‘PPIG©e
-(
-VideoChªÃl
-,
-theG©e
-){
-
-327 
-	`´štf
-("ML_GVID_SetPPIGate------\n");
-
-328 
-»t
-=0;
-
-329 
-VideoChªÃl
-)
-
-332 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPIG©e
-(
-theG©e
-);
-
-335 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPIG©e
-(
-theG©e
-);
-
-338 
-»t
- = -5;
-
-341  
-»t
-;
-
-342 
-	}
-}
-
-343 
-Stus
- 
-	$ML_GVID_S‘PPITaž
-(
-VideoChªÃl
-,
-theTaž
-){
-
-344 
-	`´štf
-("ML_GVID_SetPPITail------\n");
-
-345 
-»t
-=0;
-
-346 
-VideoChªÃl
-)
-
-349 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_S‘PPITaž
-(
-theTaž
-);
-
-352 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_S‘PPITaž
-(
-theTaž
-);
-
-355 
-»t
- = -5;
-
-358  
-»t
-;
-
-359 
-	}
-}
-
-361 
-Stus
- 
-	$ML_GVID_O³nAr
-(
-VideoChªÃl
-,
-theX
-, 
-theY
- , 
-theWidth
-, 
-theHeight
-)
-
-363 
-	`´štf
-("ML_GVID_OpenAr------\n");
-
-364 
-»t
-=0;
-
-365 
-VideoChªÃl
-)
-
-368 
-»t
- = 
-¿d¬1
-->
-	`ML_GVID_O³nAr
-(
-theX
-,
-theY
-,
-theWidth
-,
-theHeight
-);
-
-371 
-»t
- = 
-¿d¬2
-->
-	`ML_GVID_O³nAr
-(
-theX
-,
-theY
-,
-theWidth
-,
-theHeight
-);
-
-374 
-»t
- = -5;
-
-378  
-»t
-;
-
-380 
-	}
-}
-
-382 
-	$ML_GVID_Ex™
-()
-
-385 if(
-pBufãr1
-) {
-
-386 
-pBufãr1
-->
-	`Ex™Th»ad
-();
-
-387 
-d–‘e
- 
-pBufãr1
-;
-
-388 
-pBufãr1
- = 
-NULL
-;
-
-391 if(
-¿d¬1
-)
-
-393 
-d–‘e
- 
-¿d¬1
-;
-
-394 
-¿d¬1
- = 
-NULL
-;
-
-398 if(
-pBufãr2
-) {
-
-399 
-pBufãr2
-->
-	`Ex™Th»ad
-();
-
-400 
-d–‘e
- 
-pBufãr2
-;
-
-401 
-pBufãr2
- = 
-NULL
-;
-
-404 if(
-¿d¬2
-)
-
-405 { 
-d–‘e
- 
-¿d¬2
-;
-
-406 
-¿d¬2
- = 
-NULL
-;
-
-409 
-	`fb_þ—nup
-();
-
-410 if(
-debugå
-)
-	`fþo£
-(debugfp);
-
-411 
-	`´štf
-("ML_GVID_Exit!\n");
-
-412 
-	}
-}
-
+cscope 15 $HOME/scripts/linux_radar_src_so -q 0000003659 0000355221
 	@ML_GVIDMW.h
 
 1 #iâdeà
@@ -1763,53 +481,55 @@ d
 __ýlu¥lus
 
 
-	@main.cpp
+	@main.c
 
-2 
+1 
 	~<¡dio.h
 >
 
-3 
+2 
 	~<¡dlib.h
 >
 
-4 
+3 
 	~"ML_GVIDMW.h
 "
 
-5 
-	~<io¡»am
->
-
-6 
+4 
 	~<¡ršg.h
 >
 
-7 
+5 
 	~<uni¡d.h
 >
 
-9 
-usšg
- 
-Çme¥aû
- 
-	g¡d
-;
-
-14 
+7 
 	$maš
 ()
 
-16 
+9 
 »t
  = 0;
 
-17 
+10 
 »t
  = 
 	`ML_GVID_In™
 ();
+
+12 if(
+»t
+ < 0)
+
+14 
+	`´štf
+("error in ML_GVID_Init!\n");
+
+18 
+»t
+ = 
+	`ML_GVID_O³nPPI
+(0, 0, 0 , 1024, 1024);
 
 19 if(
 »t
@@ -1817,17 +537,13 @@ usšg
 
 21 
 	`´štf
-("error in ML_GVID_Init!\n");
-
-22 
-	`ex™
-(-1);
+("error in ML_GVID_OpenPPI!\n");
 
 25 
 »t
- =
-	`ML_GVID_O³nPPI
-(0,0, 0 , 1024, 1024);
+ = 
+	`ML_GVID_O³nAr
+(0,1024,300,200,200);
 
 26 if(
 »t
@@ -1835,35 +551,13 @@ usšg
 
 28 
 	`´štf
-("error in ML_GVID_OpenPPI!\n");
-
-29 
-	`ex™
-(-1);
-
-32 
-»t
- = 
-	`ML_GVID_O³nAr
-(0,1024,300,200,200);
-
-33 if(
-»t
- < 0)
-
-35 
-	`´štf
 ("error in ML_GVID_OpenAr!\n");
 
-36 
-	`ex™
-(-1);
-
-70 
+63 
 s
 [50];
 
-72 
+65 
 	`fg‘s
 (
 s
@@ -1873,55 +567,35 @@ s
 NULL
 )
 
-74 if(
+67 if(
 	`¡r¡r
 (
 s
 ,"bye"))
 
-80 
+73 
 	`u¦“p
 (8000);
 
-81 
+74 
 »t
  = 
 	`ML_GVID_S‘PPIXY
 (0,500,500);
 
-82 if(
+75 if(
 »t
  < 0)
 
-84 
+77 
 	`´štf
 ("error in ML_GVID_SetPPIXY!\n");
 
-85 
-	`ex™
-(-1);
-
-102 
-	`fg‘s
-(
-s
-,50,
-¡dš
-)!=
-NULL
-)
-
-104 if(
-	`¡r¡r
-(
-s
-,"bye"))
-
-110 
+95 
 	`ML_GVID_Ex™
 ();
 
-114 
+97 
 	}
 }
 
@@ -9232,24 +7906,6 @@ pBufãr2
 (40000,
 tshTe¡Yh
 );
-
-144 
-»t
- = 
-	`O³nTVDLL
-("./libML_GVIDTV.so");
-
-145 
-»t
- = 
-	`In™TVFunùiÚPoš‹r
-();
-
-146 
-»t
- = 
-	`In™TV
-();
 
 148 
 bIn™
@@ -35345,43 +34001,43 @@ tv_lib_hªdË
 	}
 }
 
-19 
+20 
 	$Clo£TVDLL
 ()
 
-22 if(
+23 if(
 tv_lib_hªdË
 )
 
-24 
+25 
 	`dlþo£
 (
 tv_lib_hªdË
 );
 
-25 
+26 
 tv_lib_hªdË
  = 
 NULL
 ;
 
-27 
+28 
 	}
 }
 
-29 
+30 
 	$In™TVFunùiÚPoš‹r
 ()
 
-31 
+32 
 i
 =0;
 
-32 *
+33 *
 ”rÜ
 ;
 
-33 
+35 
 In™TV
  = 
 	`dlsym
@@ -35389,7 +34045,7 @@ In™TV
 tv_lib_hªdË
 , "ML_GVID_InitTV");
 
-34 ià((
+36 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35397,7 +34053,7 @@ tv_lib_hªdË
 NULL
 )
 
-36 
+38 
 	`årštf
 (
 ¡d”r
@@ -35405,11 +34061,11 @@ NULL
 ”rÜ
 );
 
-37  --
+39  --
 i
 ;
 
-39 
+42 
 O³nTV
  = 
 	`dlsym
@@ -35417,7 +34073,7 @@ O³nTV
 tv_lib_hªdË
 , "ML_GVID_OpenTV");
 
-40 ià((
+43 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35425,7 +34081,7 @@ tv_lib_hªdË
 NULL
 )
 
-42 
+45 
 	`årštf
 (
 ¡d”r
@@ -35433,11 +34089,11 @@ NULL
 ”rÜ
 );
 
-43  
+46  
 i
 ;
 
-45 
+49 
 Clo£TV
  = 
 	`dlsym
@@ -35445,7 +34101,7 @@ Clo£TV
 tv_lib_hªdË
 , "ML_GVID_CloseTV");
 
-46 ià((
+50 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35453,7 +34109,7 @@ tv_lib_hªdË
 NULL
 )
 
-48 
+52 
 	`årštf
 (
 ¡d”r
@@ -35461,11 +34117,11 @@ NULL
 ”rÜ
 );
 
-49  --
+53  --
 i
 ;
 
-51 
+56 
 S‘TVXY
  = 
 	`dlsym
@@ -35473,7 +34129,7 @@ S‘TVXY
 tv_lib_hªdË
 , "ML_GVID_SetTVXY");
 
-52 ià((
+57 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35481,7 +34137,7 @@ tv_lib_hªdË
 NULL
 )
 
-54 
+59 
 	`årštf
 (
 ¡d”r
@@ -35489,45 +34145,17 @@ NULL
 ”rÜ
 );
 
-55  --
+60  --
 i
 ;
 
-57 
+63 
 S‘TVWH
  = 
 	`dlsym
 (
 tv_lib_hªdË
 , "ML_GVID_SetTVWH");
-
-58 ià((
-”rÜ
- = 
-	`dË¼Ü
-()è!ð
-NULL
-)
-
-60 
-	`årštf
-(
-¡d”r
-, "%s\n", 
-”rÜ
-);
-
-61  --
-i
-;
-
-63 
-S‘TVFro¡
- = 
-	`dlsym
-(
-tv_lib_hªdË
-, "ML_GVID_SetTVFrost");
 
 64 ià((
 ”rÜ
@@ -35549,7 +34177,35 @@ NULL
 i
 ;
 
-69 
+70 
+S‘TVFro¡
+ = 
+	`dlsym
+(
+tv_lib_hªdË
+, "ML_GVID_SetTVFrost");
+
+71 ià((
+”rÜ
+ = 
+	`dË¼Ü
+()è!ð
+NULL
+)
+
+73 
+	`årštf
+(
+¡d”r
+, "%s\n", 
+”rÜ
+);
+
+74  --
+i
+;
+
+77 
 S‘TVBright
  = 
 	`dlsym
@@ -35557,7 +34213,7 @@ S‘TVBright
 tv_lib_hªdË
 , "ML_GVID_SetTVBright");
 
-70 ià((
+78 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35565,7 +34221,7 @@ tv_lib_hªdË
 NULL
 )
 
-72 
+80 
 	`årštf
 (
 ¡d”r
@@ -35573,11 +34229,11 @@ NULL
 ”rÜ
 );
 
-73  --
+81  --
 i
 ;
 
-75 
+84 
 S‘TVCÚŒa¡
  = 
 	`dlsym
@@ -35585,7 +34241,7 @@ S‘TVCÚŒa¡
 tv_lib_hªdË
 , "ML_GVID_SetTVContrast");
 
-76 ià((
+85 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35593,7 +34249,7 @@ tv_lib_hªdË
 NULL
 )
 
-78 
+87 
 	`årštf
 (
 ¡d”r
@@ -35601,11 +34257,11 @@ NULL
 ”rÜ
 );
 
-79  --
+88  --
 i
 ;
 
-81 
+91 
 S‘TVCÞÜ
  = 
 	`dlsym
@@ -35613,7 +34269,7 @@ S‘TVCÞÜ
 tv_lib_hªdË
 , "ML_GVID_SetTVColor");
 
-82 ià((
+92 ià((
 ”rÜ
  = 
 	`dË¼Ü
@@ -35621,7 +34277,7 @@ tv_lib_hªdË
 NULL
 )
 
-84 
+94 
 	`årštf
 (
 ¡d”r
@@ -35629,11 +34285,11 @@ NULL
 ”rÜ
 );
 
-85  --
+95  --
 i
 ;
 
-88 
+98 
 	}
 }
 
@@ -35975,7 +34631,7 @@ __THROW
 Çme
 è
 	)
-name
+Çme
 
 73 
 	~<b™s/cm©hÿÎs.h
@@ -69244,11 +67900,10 @@ __END_DECLS
 .
 1
 /usr/include
-74
-1732
-ML_GVIDMW.cpp
+73
+1716
 ML_GVIDMW.h
-main.cpp
+main.c
 src/DataBuffer.cpp
 src/DataBuffer.h
 src/FrameBuffer/FbAsm.h
